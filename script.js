@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const options = sampleSubOptions[category] || ["No options available"];
       const listItems = options.map(item => `<li>${item}</li>`).join("");
-      subOptionsContainer.innerHTML = `<h3>${category} Sub-Options:</h3><ul>${listItems}</ul>`;
+      subOptionsContainer.innerHTML = `<h3>${category} :</h3><ul>${listItems}</ul>`;
     }, 500);
   }
 });
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       const subOptions = sampleProducts[category] || {};
-      let html = `<h3>${category} Sub-Options:</h3>`;
+      let html = `<h3>${category} :</h3>`;
       for (const [subCat, products] of Object.entries(subOptions)) {
         const productList = products.map(product => `<li>${product}</li>`).join("");
         html += `<h4>${subCat}</h4><ul>${productList}</ul>`;
